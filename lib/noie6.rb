@@ -28,7 +28,7 @@ module Rack
     end
 
     def kick_it
-      [301, {'Location' => @options[:redirect], 'Content-Type' => 'text/html'}, 'Fail browser is fail']
+      [301, {'Location' => @options[:redirect], 'Content-Type' => 'text/html'}, []]
     end
   end
 end
